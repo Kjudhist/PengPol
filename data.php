@@ -9,5 +9,8 @@
                 array(8, "Kayu Bakar", "Tanah", 1, "Miskin"),
                 array(10, "Kayu Bakar", "Tanah", 2, "Miskin"),
                 array(14, "Gas LPG", "Tanah", 1, "Miskin"));
-    $dataTabTambahan;
+    $dataTabTambahan = array();
+    $_GET
+    
+
 ?>
