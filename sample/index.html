@@ -1,0 +1,70 @@
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+<link rel="stylesheet" type="text/css" href="anu.css">
+<!------ Include the above in your HEAD tag ---------->
+
+<div class="container">
+	<div class="row">
+		<div class="table-responsive">
+            <table id="main-table" class="table exotic-table">
+                <thead>
+                    <tr class="text-center">
+                        <th>Lorem</th>
+                        <th>Lipsum</th>
+                        <th>Dorem</th>
+                        <th>Lorem</th>
+                        <th>Lipsum</th>
+                        <th>Dorem</th>
+                    </tr>
+                </thead>
+                <tbody class="text-center">
+                    <tr>
+                        <td><span class="glyphicon glyphicon-check purple"></span></td>
+                        <td>should</td>
+                        <td>come</td>
+                        <td><span class="glyphicon glyphicon-ok green"></span></td>
+                        <td>to</td>
+                        <td>fill</td>
+                    </tr>
+                    <tr>
+                        <td>Something</td>
+                        <td>should</td>
+                        <td>come</td>
+                        <td>here</td>
+                        <td><span class="glyphicon glyphicon-refresh paleyellow"></span></td>
+                        <td>fill</td>
+                    </tr>
+                    <tr>
+                        <td>Something</td>
+                        <td><span class="glyphicon glyphicon-hdd turquoise"></span></td>
+                        <td>come</td>
+                        <td>here</td>
+                        <td><a href="#" title="Some Title" data-toggle="popover" data-trigger="hover" data-content="<span class='glyphicon glyphicon-refresh paleyellow'></span> Can put icons or any other HTML content" class="td-price">hover me</a></td>
+                        <td>fill</td>
+                    </tr>
+                    <tr>
+                        <td>Something</td>
+                        <td>should</td>
+                        <td>come</td>
+                        <td><span class="glyphicon glyphicon-ok green"></span></td>
+                        <td>to</td>
+                        <td><span class="glyphicon glyphicon-hdd turquoise"></span></td>
+                    </tr>
+                    <tr>
+                        <td>Something</td>
+                        <td>should</td>
+                        <td><span class="glyphicon glyphicon-remove red"></span></td>
+                        <td>here</td>
+                        <td>to</td>
+                        <td>fill</td>
+                    </tr>
+                </tbody>
+            </table>
+	</div>
+</div>
+<script>
+$(document).ready(function(){
+    $('[data-toggle="popover"]').popover({title: "Payment Modes",html: true, placement: "left"});   
+});
+</script>
