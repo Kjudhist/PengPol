@@ -55,14 +55,6 @@
                             for ($i=0; $i < count($dataTabel); $i++) { 
                                 $dataTabel[$i] = explode(",", $dataTabel[$i]);
                             }
-                
-                            /* echo "<table border='1'>
-                                    <th>No</th>
-                                    <th>Luas Bangunan/Orang</th> 
-                                    <th>Bahan Bakar Memasak</th> 
-                                    <th>Jenis Lantai</th>
-                                    <th>Frekuensi Memakan Daging/Minggu</th>
-                                    <th>Kategori</th>"; */
                             echo '<table id="main-table" class="table exotic-table">
                                     <thead>
                                     <tr class="text-center">
@@ -136,16 +128,26 @@
             </div>
           </div>
           <div class="split2 right">
-            <div class= centered>
+            <div class= centered >
                 <?php
+                $filename2 = "data.txt";
+                $data2 = file_get_contents($filename2);
+    
+                $dataTabel2 = explode(";", $data2);
+                for ($i=0; $i < count($dataTabel2); $i++) { 
+                    $dataTabel2[$i] = explode(",", $dataTabel2[$i]);
+                }
+                if(count($dataTabel2) > 10){
+                $ab = count($dataTabel2)-1;
                 echo"<h2>K = Miskin</h2>
-                <p>P = ( K = Miskin | L =  ,B =  ,JL =  ,M =  ) = P(L= |K=Miskin)*P(B= |K=Miskin)*P(JL= |K=Miskin)*P(M= |K=Miskin)*P(K=Miskin)</p>
+                <p>P = ( K = Miskin | L = ".$dataTabel2[$ab][0]." ,B = ".$dataTabel2[$ab][1]." ,JL = ".$dataTabel2[$ab][2]." ,M = ".$dataTabel2[$ab][3]." ) = P( L = ".$dataTabel2[$ab][0]." | K=Miskin )*P( B = ".$dataTabel2[$ab][1]." |K= Miskin )*P( JL = ".$dataTabel2[$ab][2]." |K= Miskin )*P(M = ".$dataTabel2[$ab][3]." |K= Miskin )*P(K= Miskin )</p>
                 <h2>K = Sedang</h2>
-                <p>P = ( K = Sedang | L =  ,B =  ,JL =  ,M =  ) = P(L= |K=Sedang)*P(B= |K=Sedang)*P(JL= |K=Sedang)*P(M= |K=Sedang)*P(K=Sedang)</p>
+                <p>P = ( K = Sedang | L = ".$dataTabel2[$ab][0]." ,B = ".$dataTabel2[$ab][1]." ,JL = ".$dataTabel2[$ab][2]." ,M = ".$dataTabel2[$ab][3]." ) = P( L = ".$dataTabel2[$ab][0]." | K=Sedang )*P( B = ".$dataTabel2[$ab][1]." |K= Sedang )*P( JL = ".$dataTabel2[$ab][2]." |K= Sedang )*P(M = ".$dataTabel2[$ab][3]." |K= Sedang )*P(K= Sedang )</p>
                 <h2>K = Kaya</h2>
-                <p>P = ( K = Kaya | L =  ,B =  ,JL =  ,M =  ) = P(L= |K=Kaya)*P(B= |K=Kaya)*P(JL= |K=Kaya)*P(M= |K=Kaya)*P(K=Kaya)</p>";
+                <p>P = ( K = Kaya | L = ".$dataTabel2[$ab][0]." ,B = ".$dataTabel2[$ab][1]." ,JL = ".$dataTabel2[$ab][2]." ,M = ".$dataTabel2[$ab][3]." ) = P( L = ".$dataTabel2[$ab][0]." | K=Kaya )*P( B = ".$dataTabel2[$ab][1]." |K= Kaya )*P( JL = ".$dataTabel2[$ab][2]." |K= Kaya )*P(M = ".$dataTabel2[$ab][3]." |K= Kaya )*P(K= Kaya )</p>";
+                }
+
                 ?>
-              
             </div>
           </div>
     </body>
