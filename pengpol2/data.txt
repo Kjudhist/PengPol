@@ -1,0 +1,1 @@
+9,Kayu bakar,Ubin,3,Sedang;10,Gas LPG,Ubin,2,Sedang;15,Gas LPG,Plester,2,Sedang;30,Gas LPG,Ubin,4,Kaya;16,Kompor Listrik,Ubin,3,Kaya;25,Gas LPG,Ubin,5,Kaya;9,Gas LPG,Plester,0.5,Miskin;8,Kayu Bakar,Tanah,1,Miskin;10,Kayu Bakar,Tanah,2,Miskin;14,Gas LPG,Tanah,1,Miskin;9,Kayu Bakar,Tanah,3,
